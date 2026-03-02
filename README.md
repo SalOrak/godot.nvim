@@ -1,4 +1,4 @@
-- [ ] Run scenes from Godot (`godot path/to/scene.tscn`)
+- [x] Run scenes from Godot (`godot path/to/scene.tscn`)
 - [ ] Probably debug from Godot ? 
 - [ ] Lsp Configuration from godot
 - [ ] Open resources from neovim
