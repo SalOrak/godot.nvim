@@ -3,7 +3,7 @@ local CmdBuilder = require 'godot.command'
 local Pickers = require 'godot.picker'
 
 local config = {
-+	godot_exec = nil, -- Either a Path(String), command(Table) or nil for automatic finding
+	godot_exec = nil, -- Either a Path(String), command(Table) or nil for automatic finding
 	picker = "telescope"
 }
 
