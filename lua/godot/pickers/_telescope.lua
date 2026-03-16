@@ -37,6 +37,16 @@ local picker = function(opts)
     -- For compatiblity reasons
     telescope_opts = vim.tbl_deep_extend('force', telescope_opts, opts.theme or {})
 
+	local cwd = vim.uv.cwd()
+	local godot_path = Godot.godot_project_path(cwd)
+	if not godot_path then 
+		return
+	end
+
+	-- Godot needs to be launched where the project.godot file lives for
+	-- a scene to be properly executed
+	telescope_opts.cwd = godot_path
+
 	Tele.fd(telescope_opts)
 end
 
